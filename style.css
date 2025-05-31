@@ -1,0 +1,159 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f6f2; /* Light creamy background */
+    color: #4a3b31; /* Dark coffee brown */
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #6b4f41; /* Rich coffee brown */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 4px solid #c8a07d; /* Lighter brown accent */
+}
+
+header #logo {
+    max-width: 100px; /* Adjust as needed */
+    margin-bottom: 10px;
+    /* If you don't have a logo yet, you can comment out or remove the img tag in HTML */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Main Content Sections */
+main section {
+    background-color: #fff;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+main h2 {
+    color: #5a3a2a; /* Slightly darker brown for section titles */
+    margin-top: 0;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+main h3 {
+    color: #6b4f41;
+    margin-top: 0;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Important for padding and width */
+    font-size: 1em;
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.form-group .checkbox-label {
+    font-weight: normal;
+    display: inline;
+}
+
+.submit-btn {
+    background-color: #8a6651; /* Muted coffee tone */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #70503f; /* Darker shade on hover */
+}
+
+.form-message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form-message.success {
+    background-color: #e6ffed;
+    color: #28a745;
+    border: 1px solid #c3e6cb;
+}
+
+.form-message.error {
+    background-color: #ffe6e6;
+    color: #dc3545;
+    border: 1px solid #f5c6cb;
+}
+
+
+/* Footer */
+footer {
+    background-color: #4a3b31; /* Dark coffee brown */
+    color: #e0d6cc; /* Light creamy text */
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #f0e6de;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+}

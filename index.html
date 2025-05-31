@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A'VENUE CAFE - Suggestion Box</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="1000012116.jpg" alt="A'VENUE CAFE Logo" id="logo"> <h1>A'VENUE CAFE Suggestion Box</h1>
+        </div>
+    </header>
+
+    <main>
+        <section id="welcome" class="container">
+            <h2>Share Your Thoughts & Help Us Grow!</h2>
+            <p>We're all ears and eager to hear your suggestions to make your A'VENUE CAFE experience even better. Whether it's a new drink idea, a comment on our ambiance, or ways we can improve our service, your feedback is invaluable.</p>
+        </section>
+
+        <section id="suggestion-form" class="container">
+    <h3>Submit Your Suggestion</h3>
+    <form id="feedbackForm" action="https://formspree.io/f/myzwrvjn" method="POST">
+        <div class="form-group">
+            <label for="name">Your Name (Optional):</label>
+            <input type="text" id="name" name="name">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Your Email (Optional, if you'd like a response):</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div class="form-group">
+            <input type="checkbox" id="anonymous" name="anonymous">
+            <label for="anonymous" class="checkbox-label">Submit Anonymously</label>
+        </div>
+
+        <div class="form-group">
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="menu_drinks">Menu & Drinks</option>
+                <option value="ambiance_decor">Ambiance & Decor</option>
+                <option value="service">Service</option>
+                <option value="events_promotions">Events & Promotions</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="suggestion">Your Suggestion:</label>
+            <textarea id="suggestion" name="suggestion" rows="6" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="submit-btn">Send Suggestion</button>
+        </div>
+    </form> <div id="form-message" class="form-message"></div>
+</section>
+        <section id="our-promise" class="container">
+            <h3>Our Promise</h3>
+            <p>We are committed to reviewing every suggestion. While we may not be able to implement every idea, we promise to give each one careful consideration. Thank you for helping us build a better A'VENUE CAFE!</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> A'VENUE CAFE. All Rights Reserved.</p>
+            <p><a href="#" id="cafeMainSiteLink">Back to A'VENUE CAFE Main Site (Example Link)</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
