@@ -31,8 +31,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Handle form submission
     if (feedbackForm) {
-        feedbackForm.addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent default HTML form submission
+        feedbackForm.addEventListener('submit', function(event) 
+        
+                                      // Prevent default HTML form submission
 
             // --- IMPORTANT: Backend Integration Point ---
             // To actually send the data, you'll need to integrate with a backend
@@ -70,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // If using fetch to submit to a service like Formspree or your own backend:
             /*
-            fetch('YOUR_FORM_ENDPOINT_HERE', { // Replace with your Formspree or backend URL
+            fetch('https://formspree.io/f/myzwrvjn', { // Replace with your Formspree or backend URL
                 method: 'POST',
                 body: formData, // or JSON.stringify(data) if your endpoint expects JSON
                 headers: {
